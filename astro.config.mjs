@@ -1,13 +1,13 @@
 // @ts-check
-import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
 	integrations: [
 		starlight({
-			title: 'My Docs',
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			title: 'iBear Docs',
+			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dBear7x/astro-docs-pages' }],
 			sidebar: [
 				{
 					label: 'Guides',
