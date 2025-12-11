@@ -14,7 +14,6 @@ jobs:
           npm install
           npm run build
       - name: Auto approve
-
         uses: hmarr/auto-approve-action@v4
         with:
           pull-request-number: ${{ github.event.pull_request.number  }}
