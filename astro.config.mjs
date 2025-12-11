@@ -6,6 +6,7 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	integrations: [
 		starlight({
+			favicon: '/favicon.png',
 			title: 'iBear Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dBear7x/astro-docs-pages' }],
 			sidebar: [
