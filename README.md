@@ -1,5 +1,6 @@
 # Starlight Starter Kit: Basics
-![Build](https://github.com/dBear7x/astro-docs-pages/actions/workflows/ci.yml/badge.svg)
+
+![Build](https://github.com/dBear7x/astro-docs-pages/actions/workflows/build.yml/badge.svg)
 ![Cloudflare Deploy](https://github.com/dBear7x/astro-docs-pages/actions/workflows/deploy.yml/badge.svg)
 
 ## 🚀 Project Structure
