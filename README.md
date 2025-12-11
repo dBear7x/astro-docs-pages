@@ -2,12 +2,6 @@
 
 ![Cloudflare Deploy](https://github.com/dBear7x/astro-docs-pages/actions/workflows/deploy.yml/badge.svg)
 
-```
-npm create astro@latest -- --template starlight
-```
-
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
 ## 🚀 Project Structure
 
 Inside of your Astro + Starlight project, you'll see the following folders and files:
