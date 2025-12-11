@@ -16,7 +16,9 @@ jobs:
       - name: Auto approve
         uses: hmarr/auto-approve-action@v4
         with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           pull-request-number: ${{ github.event.pull_request.number  }}
+
       - name: Auto merge
         uses: peter-evans/enable-pull-request-automerge@v3
         with:
