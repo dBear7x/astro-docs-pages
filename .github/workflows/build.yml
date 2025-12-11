@@ -1,0 +1,21 @@
+name: Build, Approve and Merge
+on:
+  pull_request:
+    branches: [ main ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build
+        run: |
+          npm install
+          npm run build
+      - name: Auto approve
+        uses: hmarr/auto-approve-action@v3
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Auto merge
+        uses: peter-evans/merge-pull-request@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
