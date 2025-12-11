@@ -6,20 +6,22 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	integrations: [
 		starlight({
+			favicon: '/favicon.png',
 			title: 'iBear Docs',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/dBear7x/astro-docs-pages' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Overview',
+					autogenerate: { directory: 'overview' },
 				},
 				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+					label: 'Python',
+					autogenerate: { directory: 'python' },
 				},
+				{
+					label: 'Common',
+					autogenerate: { directory: 'common' },
+				}
 			],
 		}),
 	],
