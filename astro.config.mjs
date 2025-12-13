@@ -23,6 +23,10 @@ export default defineConfig({
 				{
 					label: 'Common',
 					autogenerate: { directory: 'common' },
+				},
+				{
+					label: 'Recipes',
+					autogenerate: { directory: 'recipes' },
 				}
 			],
 		}),
